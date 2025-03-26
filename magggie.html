@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        .highlight {
+            color: yellow;
+            font-size: 20px;
+        }
+        img{
+            border: 20px solid blue;
+            border-radius: 20px;
+            margin: 20px;
+        }
+      footer{
+        text-align: center;
+        font-weight: bold;
+       font-style: italic;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Chege's First Website</title>
+    <!-- 3. external css-->
+    <link rel="stylesheet"href="style.css">
+
+</head>
+<body>
+    <h2 id="heading">East African Countries</h2>
+    <ol type="I" start="1">
+        <li>Kenya</li>
+        <li>Ethiopia</li>
+        <li>Somalia</li>
+        <li>Uganda</li>
+        <li>South Sudan</li>
+    </ol>
+
+    <h2>East Africa Country Images</h2>
+    <h3 class="highlight">Globe Image</h3>
+    <img src="https://media.istockphoto.com/id/531927404/photo/map-of-republic-of-kenya.jpg?b=1&s=612x612&w=0&k=20&c=6bIqQucgVLv_W2Q0agFQ5PBNBuhqMo295nFlxfcVZfA=" alt="Image 2" width="800" height="400">
+    <br>
+    <img src="https://images.pexels.com/photos/4715519/pexels-photo-4715519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2" width="400" height="400">
+    <br>
+
+    <h3>Contact Details</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>margret</td>
+                <td>254-00100</td>
+                <td>0712345678</td>
+                <td>margret@gmail.com</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>254-00100</td>
+                <td>0712345678</td>
+                <td>john@gmail.com</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>254-00100</td>
+                <td>0712345678</td>
+                <td>james@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Judy</td>
+                <td>254-00100</td>
+                <td>0712345678</td>
+                <td>judy@yahoo.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="login.php" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <!-- Date Field -->
+        <label for="date">Date of Birth:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="ethiopia">Ethiopia</option>
+            <option value="somalia">Somalia</option>
+            <option value="uganda">Uganda</option>
+            <option value="south_sudan">South Sudan</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="button">Register</button>
+    </form>
+</body>
+
+<footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </footer>
+</html>
+
